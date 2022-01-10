@@ -10,8 +10,8 @@ android {
         applicationId "com.sanjayprajapat.in_app_purchase"
         minSdk 22
         targetSdk 31
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "1.0.1"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -43,4 +43,11 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+
+    def billing_version = "3.0.0"
+    //Kotlin
+    implementation "com.android.billingclient:billing-ktx:$billing_version"
+
+    
 }
